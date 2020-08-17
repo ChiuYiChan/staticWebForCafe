@@ -1,0 +1,130 @@
+body,
+html {
+    height: 100%;
+    /* background-color: #282E34; */
+    background-color: #FCFAF2;
+}
+
+.nav-link {
+    margin-right: 7em !important;
+    margin-left: 7em !important;
+}
+
+.nav-link:hover {
+    background-color: #CDE8A7;
+    color: #F9FEF2;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.parallax-1 {
+    overflow: hidden;
+    /* The image used */
+    background-image: url('../img/about_bg2.jpg');
+    /* Full height */
+    height: 70%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2 {
+    overflow: hidden;
+    /* The image used */
+    background-image: url('../img/about_bg.jpg');
+    /* Full height */
+    height: 60%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-3 {
+    overflow: hidden;
+    /* The image used */
+    background-image: url('../img/about_bg2.jpg');
+    /* Full height */
+    height: 30%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    letter-spacing: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    color: #f7f7f7;
+}
+
+.pic {
+    overflow: hidden;
+    width: 100%;
+}
+
+.pic_env img {
+    overflow: hidden;
+    width: 80%;
+    height: auto;
+    margin: 40px auto;
+}
+
+.container-bg {
+    color: #6E552F;
+    background-color: #FCFAF2;
+}
+
+p {
+    white-space: pre-wrap;
+    margin: 0 auto 20px auto;
+}
+
+.footer-bg {
+    background-color: #FCFAF2;
+    color: #6E552F;
+}
+
+.footer-bg img {
+    width: 200px;
+    height: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .parallax-1,
+    .parallax-2,
+    .parallax-3 {
+        background-attachment: scroll;
+    }
+    .navbar {
+        display: none;
+    }
+    .mobile-nav {
+        z-index: 1;
+        display: block;
+        position: fixed;
+        right: 5px;
+        top: 40%;
+    }
+    .mobile-nav a {
+        color: #554236;
+    }
+    .btn-secondary {
+        opacity: 0.3;
+        background-color: #877F6C;
+        border-color: #877F6C;
+    }
+}
